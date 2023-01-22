@@ -27,7 +27,7 @@
                 To use value inside Either Variable we need to use fold method.<br>
             </h5><br>
             EX: <br>
-                Option&lt;Either&lt;ApiFailure, List&lt;dynamic&gt;&gt;<br> apiResponse = none();
+                Option&lt;Either&lt;ApiFailure, List&lt;dynamic&gt;&gt; apiResponse = none();
                 assign value -> apiResponse = some(left(ApiFailure)) or <br>apiResponse = some(right(List&lt;dynamic&gt;))
                 apiResponse.fold(
                     () {
@@ -36,7 +36,7 @@
                     (eitherValue) => a.fold(<br>
                               (apiFailure) => handle Api error,<br>
                               (success) => handle Api success,<br>
-                            ),<br>
+                            ),
                 );
             <p>
            </p>
